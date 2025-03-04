@@ -241,15 +241,15 @@
 						</span>
 
 						<hr style="margin-top: 0em;">
-						<h3 style="margin-bottom: 0.5em; color: #1E3A8A; font-size: 130%;">Visual Alignment and Consistency</h3>
+						<h3 style="margin-bottom: 0.5em; color: #1E3A8A; font-size: 130%;">Experiments</h3>
 
 						<p class="paper-paragraph" align="justify"></p>
-						To ensure visual consistency between the handheld and robot-mounted devices, we established a visual alignment guideline: <em style="font-weight: bold;">the bottom of the GoPro's fisheye lens image aligns with the bottom of the gripper's fingertips</em>. 
+						We evaluated all policies across six strawberry cluster scenarios, detailed in Figure \ref{fig:cluster_states}. To account for scene variability, we performed 10 picking trials for each policy and scenario. Table \ref{tab:state_comparison} presents the successful picking rates achieved by each policy with full camera observation across all scenarios. The results clearly show that both EPACT variants outperformed the original ACT policy in all clustered states. Specifically, the end-pose assist module improved average success rates by 36.7\% for EPACT-L and 41.7\% for EPACT-EE. Given that all policies were trained on the same dataset and with identical configurations, these findings demonstrate the enhanced manipulation capabilities of the EPACT policy for clustered strawberry picking.
 						</p>
 						<br>
 						<span class="figure" style="margin-top: 0.1em; margin-bottom: 0;">
-							<img src="images/observation.png" width="100%" margin-top="0.5em" alt="" />
-							<div style="margin-bottom: 1.5em; text-align: center;">The views captured by the Intel D435i cameras on the handheld device and the robot-mounted device, respectively, with the colored dashed line indicating the ends of the fingertips.</div>
+							<img src="images/state_6.png" width="100%" margin-top="0.5em" alt="" />
+							<div style="margin-bottom: 1.5em; text-align: center;">Four representative three-strawberries cluster scenarios (States 1-4), a two-strawberries cluster (State 5) and a non-occluded strawberry baseline scenario (State 0). In each state, the left image shows the artificial scene used in our experiments, and the right image shows real strawberries in the field.</div>
 						</span>
 
 						<hr style="margin-top: 0em;">
